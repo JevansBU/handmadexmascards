@@ -41,8 +41,19 @@
             .images { /* Container for the images */
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-                gap: 28px;
+                gap: 20px;
                 justify-items: center;
+            }
+
+            .card { /* This is the image and the text */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card h2 { /* This is the cards text */
+                margin-top: 8px;
+                text-align: center;
             }
 
             .pic { /* This is the actual image */
@@ -60,32 +71,108 @@
                 box-shadow: 0 12px 24px rgba(43, 33, 24, 0.2);
             }
 
+            #price {
+                color: black;
+                font-size: large;
+                text-decoration: underline;
+            }
+
+            .divider {
+                border: none;
+                border-top: 2px solid #D4A373;
+                margin: 48px auto 24px;
+                max-width: 600px;
+            }
+
         </style>
     </head>
 
     <body>
         <div class="container">
             <h1 class="title">Hand Drawn Christmas Cards</h1>
+
+            <h2 class="title" id="price"> £2.50 Each (5 for £10)</h2>
             <div class="images">
-                <img src="./img/stuck_in_chimney.jpg" alt="stuck in chimney" class="pic" />
-                <img src="./img/good_boy.jpg" alt="good boy" class="pic" />
-                <img src="./img/wearing_coat.jpg" alt="wearing coat" class="pic" />
-                <img src="./img/china.jpg" alt="china" class="pic" />
-                <img src="./img/arrested.jpg" alt="arrested" class="pic" />
-                <img src="./img/doctor.jpg" alt="doctor" class="pic" />
-                <img src="./img/barbie_doll.jpg" alt="barbie doll" class="pic" />
-                <img src="./img/nice_attitude.jpg" alt="nice attitude" class="pic" />
-                <img src="./img/delivery_strategy.jpg" alt="delivery strategy" class="pic" />
-                <img src="./img/iphones.jpg" alt="iphones" class="pic" />
-                <img src="./img/concerned_turkey.jpg" alt="concerned turkey" class="pic" />
-                <img src="./img/training_day.jpg" alt="training day" class="pic" />
-                <img src="./img/artic.jpg" alt="artic" class="pic" />
-                <img src="./img/complaints.jpg" alt="complaints" class="pic" />
-                <img src="./img/morale_booster.jpg" alt="morale booster" class="pic" />
-                <img src="./img/french_revolution.jpg" alt="french revolution" class="pic" />
-                <img src="./img/inside_the_card.jpg" atl="card interior" class="pic" />
-                <img src="./img/tony_josh_motto.jpg" atl="motto" class="pic" />
+                <div class="card">
+                    <img src="./img/stuck_in_chimney.jpg" alt="stuck in chimney" class="pic" />
+                    <h2>Stuck In chimney</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/good_boy.jpg" alt="good boy" class="pic" />
+                    <h2>Good Boy</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/wearing_coat.jpg" alt="wearing coat" class="pic" />
+                    <h2>Wearing Coat</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/china.jpg" alt="china" class="pic" />
+                    <h2>China</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/arrested.jpg" alt="arrested" class="pic" />
+                    <h2>Arrested</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/doctor.jpg" alt="doctor" class="pic" />
+                    <h2>Doctor</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/barbie_doll.jpg" alt="barbie doll" class="pic" />
+                    <h2>Barbie Doll</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/nice_attitude.jpg" alt="nice attitude" class="pic" />
+                    <h2>Nice Attitude</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/delivery_strategy.jpg" alt="delivery strategy" class="pic" />
+                    <h2>Delivery Strategy</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/iphones.jpg" alt="iphones" class="pic" />
+                    <h2>Iphones</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/concerned_turkey.jpg" alt="concerned turkey" class="pic" />
+                    <h2>Concerned Turkey</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/training_day.jpg" alt="training day" class="pic" />
+                    <h2>Training Day</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/artic.jpg" alt="artic" class="pic" />
+                    <h2>Artic</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/complaints.jpg" alt="complaints" class="pic" />
+                    <h2>Complaints</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/morale_booster.jpg" alt="morale booster" class="pic" />
+                    <h2>Morale Booster</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/french_revolution.jpg" alt="french revolution" class="pic" />
+                    <h2>French Revolution</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/inside_the_card.jpg" atl="card interior" class="pic" />
+                    <h2>Card Interior</h2>
+                </div>
+                <div class="card">
+                    <img src="./img/tony_josh_motto.jpg" atl="motto" class="pic" />
+                </div>
             </div>
+            <hr class="divider" />
+                <section class="contact" id="contact">
+            <section class="contact" id="contact">
+            <h2>Contact &amp; Orders</h2>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/j.evans005" target="_blank" rel="noopener">@j.evans005</a></p>
+                <p><strong>Snapchat:</strong> <a href="https://www.snapchat.com/add/joshevans.05" target="_blank" rel="noopener">@joshevans.05</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+447398886658">+44 7398886658</a></p>
+            </section>
         </div>
     </body>
 </html>
